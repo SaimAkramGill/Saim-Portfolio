@@ -1,0 +1,100 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1250 >>
+stream
+BT
+/F1 12 Tf
+72 760 Td
+(PORTFOLIO MASTER INFORMATION DOCUMENT) Tj
+0 -20 Td
+(1. Personal Identity) Tj
+0 -15 Td
+(Full Name:) Tj
+0 -15 Td
+(Professional Title:) Tj
+0 -15 Td
+(Tagline:) Tj
+0 -20 Td
+(2. Executive Summary) Tj
+0 -15 Td
+(Write a 5-7 line professional summary including experience, expertise,) Tj
+0 -15 Td
+(industries, and value proposition.) Tj
+0 -20 Td
+(3. Core Skills) Tj
+0 -15 Td
+(Frontend:) Tj
+0 -15 Td
+(Backend:) Tj
+0 -15 Td
+(Database:) Tj
+0 -15 Td
+(DevOps / Cloud:) Tj
+0 -20 Td
+(4. Experience) Tj
+0 -15 Td
+(Company Name | Position | Duration | Location) Tj
+0 -15 Td
+(Responsibilities and measurable achievements.) Tj
+0 -20 Td
+(5. Projects) Tj
+0 -15 Td
+(Project Name | Type | Tech Stack | Links) Tj
+0 -15 Td
+(Problem Statement, Solution, Impact.) Tj
+0 -20 Td
+(6. Certifications) Tj
+0 -15 Td
+(Certification Name | Organization | Year) Tj
+0 -20 Td
+(7. Education) Tj
+0 -15 Td
+(Degree | Institution | Year) Tj
+0 -20 Td
+(8. Achievements) Tj
+0 -15 Td
+(Awards, Hackathons, Open Source, Publications.) Tj
+0 -20 Td
+(9. Blog Topics) Tj
+0 -15 Td
+(List future technical writing topics.) Tj
+0 -20 Td
+(10. Contact Information) Tj
+0 -15 Td
+(Email | LinkedIn | GitHub | Domain | Location) Tj
+0 -20 Td
+(11. Professional Values) Tj
+0 -15 Td
+(Architecture principles and development philosophy.) Tj
+0 -20 Td
+(12. Future Goals) Tj
+0 -15 Td
+(Long-term career direction.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000053 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000001500 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1580
+%%EOF

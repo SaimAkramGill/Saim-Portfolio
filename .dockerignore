@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build output
+.next
+out
+
+# Environment files (never bake secrets into the image)
+.env
+.env*.local
+.env.development
+.env.production
+
+# Version control
+.git
+.gitignore
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Dev / test tools
+fix_ease.py
+*.py
+README.md
+
+# TypeScript build info
+*.tsbuildinfo

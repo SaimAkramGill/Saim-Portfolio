@@ -1,0 +1,55 @@
+services:
+  # ──────────────────────────────────────────
+  # Portfolio Web App
+  # ──────────────────────────────────────────
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    image: saim-portfolio:latest
+    container_name: saim-portfolio
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      # Uncomment and fill these when you integrate EmailJS / analytics:
+      # - NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+      # - NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+      # - NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+    healthcheck:
+      test: [ "CMD", "wget", "-qO-", "http://localhost:3000" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - portfolio-network
+
+  # ──────────────────────────────────────────
+  # Nginx Reverse Proxy  (optional — comment
+  # out if you don't need it locally)
+  # ──────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: saim-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      portfolio:
+        condition: service_healthy
+    networks:
+      - portfolio-network
+    profiles:
+      - with-nginx # only starts when: docker compose --profile with-nginx up
+
+networks:
+  portfolio-network:
+    driver: bridge
